@@ -6,20 +6,14 @@ esp = ["uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"
 
 dict = {}
 
-for digit in digits:
+
+def make_dict():
+    for digit in digits:
         i = digits.index(digit)
         dict.update({digit: {"french": fr[i], "spanish": esp[i], "english": en[i]}})
 
 
-# def make_dict():
-#     i = 0
-
-#     for digit in digits:
-#         dict.update({digits[i]: {"french": fr[i], "spanish": esp[i], "english": en[i]}})
-#         i += 1
-
-
-# make_dict()
+make_dict()
 print(dict)
 
 # {
@@ -33,3 +27,11 @@ print(dict)
 #     "8": {"french": "huit", "spanish": "ocho", "english": "eight"},
 #     "9": {"french": "neuf", "spanish": "nueve", "english": "nine"},
 # }
+
+
+# def make_dict():
+#     i = 0
+
+#     for digit in digits:
+#         dict.update({digits[i]: {"french": fr[i], "spanish": esp[i], "english": en[i]}})
+#         i += 1
